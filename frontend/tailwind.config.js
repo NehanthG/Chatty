@@ -1,9 +1,10 @@
 /** @type {import('tailwindcss').Config} */
-import daisyui from 'daisyui'
-export default {
+const daisyui = require('daisyui');
+
+module.exports = {
   content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    './index.html',
+    './src/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
     extend: {},
@@ -11,29 +12,10 @@ export default {
   plugins: [daisyui],
   daisyui: {
     themes: [
-      "light",
-      "dark",
-      "cupcake",
-      "retro",
-      "cyberpunk",
-      "valentine",
-      "halloween",
-      "aqua",
-      "lofi",
-      "pastel",
-      "fantasy",
-      "wireframe",
-      "black",
-      "luxury",
-      "dracula",
-      "cmyk",
-      "autumn",
-      "business",
-      "acid",
-      "lemonade",
-      "night",
-      "coffee",
-      "winter",
+      'light', 'dark', 'cupcake', 'retro', 'cyberpunk', 'valentine', 
+      'halloween', 'aqua', 'lofi', 'pastel', 'fantasy', 'wireframe',
+      'black', 'luxury', 'dracula', 'cmyk', 'autumn', 'business', 
+      'acid', 'lemonade', 'night', 'coffee', 'winter'
     ],
   },
-}
+};
