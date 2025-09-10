@@ -43,7 +43,7 @@ if (process.env.NODE_ENV === "production") {
   socketApp.use(express.static(frontendPath));
 
   // Catch-all route
-  socketApp.get("*", (req, res) => {
+  socketApp.get('/:path(*)', (req, res) => {
     res.sendFile(path.join(frontendPath, "index.html"));
   });
 }
